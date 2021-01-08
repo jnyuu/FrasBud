@@ -1,6 +1,63 @@
+/* latin-ext */
 @font-face {
-  font-family: roboto;
-  src: url("../../fonts/Roboto-Light.ttf");
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../fonts/Frasbud/mem8YaGs126MiZpBA-UFW50bbck.woff2") format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../fonts/Frasbud/mem8YaGs126MiZpBA-UFVZ0b.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../../fonts/Frasbud/mem5YaGs126MiZpBA-UNirkOXOhpOqc.woff2") format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../../fonts/Frasbud/mem5YaGs126MiZpBA-UNirkOUuhp.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../fonts/Frasbud/Montserrat700.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../../fonts/Frasbud/Montserrat500.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 * {
@@ -645,7 +702,7 @@ a:hover.back-to-top {
   padding-bottom: 0.375rem;
   background-color: #e07236;
   -webkit-box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
   font: 600 0.875rem/0.875rem "Open Sans", sans-serif;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -656,7 +713,7 @@ a:hover.back-to-top {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-  width: 7.0625rem;
+  max-width: 8.0625rem;
   -webkit-backface-visibility: hidden;
 }
 
@@ -692,7 +749,7 @@ a:hover.back-to-top {
   /* this makes the dropdown menu stay open while hovering it */
   min-width: auto;
   -webkit-animation: fadeDropdown 0.2s;
-          animation: fadeDropdown 0.2s;
+  animation: fadeDropdown 0.2s;
   /* required for the fade animation */
 }
 
@@ -781,8 +838,10 @@ a:hover.back-to-top {
 }
 
 .header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))), url("../../img/realizations/realizacja6.jpg") center center no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../../img/realizations/realizacja6.jpg") center center no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))),
+    url("../../img/realizations/realizacja6.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("../../img/realizations/realizacja6.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -1155,7 +1214,7 @@ a:hover.back-to-top {
   .navbar-custom {
     padding: 2.125rem 1.5rem 2.125rem 2rem;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     background: transparent;
   }
   .navbar-custom .navbar-brand.logo-text {
@@ -1175,7 +1234,7 @@ a:hover.back-to-top {
   .navbar-custom.top-nav-collapse {
     padding: 0.375rem 1.5rem 0.375rem 2rem;
     -webkit-box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
     background-color: #e07236;
   }
   .navbar-custom.top-nav-collapse .navbar-brand.logo-text {
@@ -1194,7 +1253,7 @@ a:hover.back-to-top {
     border-top: 0.75rem solid rgba(0, 0, 0, 0);
     border-radius: 0.25rem;
     -webkit-box-shadow: 0 0.25rem 0.375rem 0 rgba(0, 0, 0, 0.03);
-            box-shadow: 0 0.25rem 0.375rem 0 rgba(0, 0, 0, 0.03);
+    box-shadow: 0 0.25rem 0.375rem 0 rgba(0, 0, 0, 0.03);
   }
   .navbar-custom.top-nav-collapse .dropdown-menu {
     border-top: 0.125rem solid rgba(0, 0, 0, 0);
@@ -1413,8 +1472,8 @@ a:hover.back-to-top {
   }
   .tabs .nav-tabs {
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
   /* end of details 2 */
   /* Call Me */
