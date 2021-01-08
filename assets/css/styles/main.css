@@ -714,6 +714,14 @@ a:hover.back-to-top {
   overflow: visible;
 }
 
+.navbar-custom .logo-image {
+  display: inline-block;
+  width: 97px;
+  height: 29px;
+  background: url("../../img/logo.svg");
+  background-size: 97px 29px;
+}
+
 .navbar-custom .navbar-brand.logo-text {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
